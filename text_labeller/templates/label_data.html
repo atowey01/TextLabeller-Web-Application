@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+    <form method="POST" action="", enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <br></br>
+            <h4>{{text_to_label}}</h4>
+            <br></br>
+            <div class="form-group">
+                {{ form.class_label.label(class="form-control-label") }}
+                {% if form.class_label.errors %}
+                    {{ form.class_label(class="form-control form-control-lg is-invalid", style="list-style:none") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.class_label.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.class_label(style="list-style:none") }}
+                {% endif %}
+            </div>
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-outline-info") }}
+        </div>
+    </form>
+</div>
+{% endblock content %}
+
+
