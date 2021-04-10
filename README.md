@@ -1,4 +1,4 @@
-# TextLabeller-Web Application
+# TextLabeller - Web Application
 TextLabeller is a web application that assists users to label text for text classification tasks. It can be accessed at: https://textlabeller.herokuapp.com/home
 
 Users can:
