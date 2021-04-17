@@ -48,7 +48,7 @@ class Project(db.Model):
 class Class_Labels(db.Model):
     class_label_id = db.Column(db.Integer, primary_key=True)
     class_label = db.Column(db.String(100), nullable=False)
-    project_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)
+    project_id = db.Column(db.Integer, db.ForeignKey('project.project_id'), nullable=False)
 
     def __repr__(self):
         return f"Class Label('{self.class_label}')"
