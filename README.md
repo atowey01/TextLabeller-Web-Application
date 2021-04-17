@@ -8,4 +8,4 @@ Users can:
 4. View and download labelled data
 
 ## Tools used:
-This application was created using Python, Flask and Jinja templates. The app is deployed on Heroku.
+This application was created using Python, Flask and Jinja templates. The app is deployed on Heroku. The data is stored in a PostgreSQL database.
